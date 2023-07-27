@@ -1,0 +1,327 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    background-image: radial-gradient(rgb(43, 79, 103), rgb(29, 41, 53));
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+
+.header .logo img {
+    height: 7rem;
+    width: 24rem;
+    cursor: pointer;
+
+}
+
+.header .ul {
+    display: flex;
+
+}
+
+.header .ul li {
+    margin: 0 10px;
+    list-style-type: none;
+}
+
+.header .ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.header .ul li a:hover {
+    color: rgb(200, 59, 174);
+    color: coral;
+
+}
+
+.socialmenuicon {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.socialmenuicon i:hover {
+    color: coral;
+}
+
+.menuicon {
+    display: none;
+}
+
+
+section {
+    padding: 2rem;
+
+}
+
+.hero {
+    width: 100%;
+    height: 75vh;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+
+}
+
+.container .imgbox {
+    min-width: 600px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 2rem;
+
+}
+
+.container .imgbox .imgboxlist {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.container .imgbox .imgboxlist li img {
+
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+
+}
+
+
+.container .imgbox .imgboxlist li:hover img,
+.container .imgbox .imgboxlist li img.activeimg {
+    transform: scale(1.2);
+    box-shadow: -10px 7px 12px rgba(0, 0, 0, 0.67);
+
+}
+
+.container .imgbox .imgboxlist img {
+    width: 70px;
+
+}
+
+
+
+
+.container .imgbox .imgboxshow img {
+    border-radius: 10px;
+    width: 450px;
+}
+
+.container .textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container .textbox h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.container .textbox p {
+    font-size: 1.2rem;
+    color: antiquewhite;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.container .textbox .btn {
+    margin-top: 2rem;
+}
+
+.container .textbox .btn a {
+    background: #407fd8;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    margin-top: 1rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+.container .textbox .btn a:hover {
+    background: #4128a4;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+
+    }
+
+   
+    .header{
+        padding: 10px 15px;
+
+    }
+    
+.header .logo img {
+    height: 3rem;
+    width: 8rem;
+    cursor: pointer;
+
+}
+
+.header .ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    position: absolute;
+    top: 5rem;
+    right: -10rem;
+    transition: .3s ease-in-out;
+
+}
+.header .ul.open {
+    right: 0rem;
+
+}
+
+.header .ul li {
+    margin: 10px 20px;
+    list-style-type: none;
+
+}
+.menuicon {
+    display: block;
+    font-size: 1.3rem;
+}
+
+section {
+    padding: .6rem;
+
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.container{
+    flex-direction: column;
+}
+
+.container .imgbox {
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .1rem;
+
+}
+
+.container .imgbox .imgboxlist {
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 21%;
+    transform: translate(-50%, -40%);
+    margin: 0rem;
+
+}
+.container .imgbox .imgboxlist li img {
+
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+    width: 50px;
+
+}
+
+.container .imgbox .imgboxshow{
+    width: 350px;
+    height: 300px;
+}
+
+.container .imgbox .imgboxshow img{
+    height: 100%;
+    width: 100%;
+}
+
+.textbox{
+    width: 100%;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+.container .textbox {
+ 
+    padding: .7rem;
+}
+
+.container .textbox h2 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.container .textbox p {
+    font-size: 1.2rem;
+    color: antiquewhite;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.container .textbox .btn {
+    margin-top: 1.3rem;
+}
+
+.container .textbox a{
+font-size: 1rem;
+}
+
+
+
+
+
+}
